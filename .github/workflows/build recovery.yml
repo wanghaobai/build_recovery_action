@@ -94,7 +94,7 @@ jobs:
         cd ${GITHUB_WORKSPACE}/workspace
         . build/envsetup.sh
         lunch ${{ github.event.inputs.MAKEFILE_NAME }}-eng
-        mka recoveryimage -j2
+        mka bootimage -j2
 
     - name: Generate info
       run: |
